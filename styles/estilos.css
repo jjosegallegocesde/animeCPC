@@ -13,6 +13,27 @@ header nav{
     text-align: center;
 }
 
+header nav li{
+    display:inline-block;
+    padding: 20px;
+    font-size: 22px;
+    color:#919392;
+}
+
+header nav a{
+    text-decoration: none;
+    color:inherit;
+}
+
+header nav a:hover{
+    color:black;
+    text-decoration: underline;  
+}
+
+.imagenBanner{
+    height: 600px;
+}
+
 
 
 
