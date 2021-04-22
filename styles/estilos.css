@@ -16,7 +16,7 @@ header nav{
 header nav li{
     display:inline-block;
     padding: 20px;
-    font-size: 22px;
+    font-size: 24px;
     color:#919392;
 }
 
@@ -32,7 +32,14 @@ header nav a:hover{
 
 .imagenBanner{
     height: 600px;
+    
 }
+
+.fondo1{
+    background-color: #F85B1A;
+    color:white;
+}
+
 
 
 
