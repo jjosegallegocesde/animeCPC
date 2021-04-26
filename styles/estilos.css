@@ -1,8 +1,7 @@
 #logo img{
     display: block;
     margin-left:auto;
-    margin-right:auto;
-   
+    margin-right:auto; 
 }
 
 header{
@@ -39,6 +38,18 @@ header nav a:hover{
     background-color: #F85B1A;
     color:white;
 }
+
+
+.fondo1 a i:hover{
+    transform: scale(1.8);
+    padding-bottom:15px;
+}
+
+.dondeVer{
+    display:inline-block;
+}
+
+
 
 
 
