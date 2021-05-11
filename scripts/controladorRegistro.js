@@ -14,7 +14,33 @@ function recibirDatosFormulario(){
     let nombreValor=nombre.value;
     let correoValor=correo.value;
     let password1Valor=password1.value;
+
+    validarCaminos(nombreValor,correoValor,password1Valor);
    
+}
+
+function validarCaminos(nombreValor,correoValor,password1Valor){
+
+    if(nombreValor=="" && correoValor== "" && password1Valor==""){
+       
+
+    }else if(correoValor== "" && password1Valor==""){
+        
+
+    }else if(nombreValor=="" && password1Valor==""){
+
+    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+
+    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+
+    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+
+    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+
+    }else{
+
+    }
+
 }
 
 
