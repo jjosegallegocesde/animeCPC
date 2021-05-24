@@ -2,7 +2,7 @@
 let boton=document.getElementById("botonEnvio");
 let nombre=document.getElementById("nombreUsuario");
 let correo=document.getElementById("correoUsuario");
-let password1=document.getElementById("passwordUsuario");
+let password=document.getElementById("passwordUsuario");
 
 
 //Recibir el evento de clic en mi boton
@@ -13,35 +13,66 @@ function recibirDatosFormulario(){
 
     let nombreValor=nombre.value;
     let correoValor=correo.value;
-    let password1Valor=password1.value;
+    let passwordValor=password.value;
 
-    validarCaminos(nombreValor,correoValor,password1Valor);
+    validarCaminos(nombreValor,correoValor,passwordValor);
    
 }
 
-function validarCaminos(nombreValor,correoValor,password1Valor){
+function validarCaminos(nombreValor,correoValor,passwordValor){
 
-    if(nombreValor=="" && correoValor== "" && password1Valor==""){
+    if(nombreValor=="" && correoValor== "" && passwordValor==""){
+        
+        nombre.classList.add("is-invalid");
+        correo.classList.add("is-invalid");
+        password.classList.add("is-invalid");
        
 
-    }else if(correoValor== "" && password1Valor==""){
+    }else if(nombreValor=="" && correoValor==""){
+
+        nombre.classList.add("is-invalid");
+        correo.classList.add("is-invalid");
+        password.classList.remove("is-invalid");
         
+    }else if(nombreValor=="" && passwordValor==""){
 
-    }else if(nombreValor=="" && password1Valor==""){
+        nombre.classList.add("is-invalid");
+        correo.classList.remove("is-invalid");
+        password.classList.add("is-invalid");
 
-    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+    }else if(correoValor== "" && passwordValor==""){
 
-    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+        nombre.classList.remove("is-invalid");
+        correo.classList.add("is-invalid");
+        password.classList.add("is-invalid");
 
-    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+    }else if(nombreValor==""){
 
-    }else if(nombreValor=="" && correoValor== "" && password1Valor==""){
+        nombre.classList.add("is-invalid");
+        correo.classList.remove("is-invalid");
+        password.classList.remove("is-invalid");
+
+    }else if(correoValor== ""){
+
+        nombre.classList.remove("is-invalid");
+        correo.classList.add("is-invalid");
+        password.classList.remove("is-invalid");
+
+    }else if(passwordValor==""){
+
+        nombre.classList.remove("is-invalid");
+        correo.classList.remove("is-invalid");
+        password.classList.add("is-invalid");
 
     }else{
 
+        nombre.classList.remove("is-invalid");
+        correo.classList.remove("is-invalid");
+        password.classList.remove("is-invalid");
     }
 
 }
+
 
 
 
